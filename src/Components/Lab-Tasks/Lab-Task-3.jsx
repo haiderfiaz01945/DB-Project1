@@ -165,7 +165,7 @@ function LabTask3() {
             <p className="font-semibold text-black">vii Get clients with outstanding balances:</p>
             <div className="overflow-x-auto p-4 rounded-lg bg-background">
               <pre className="text-sm">
-                <code>SELECT * FROM client_master WHERE bal_due  0;</code>
+                <code>SELECT * FROM client_master WHERE bal_due &gt; 0;</code>
               </pre>
             </div>
           </div>
