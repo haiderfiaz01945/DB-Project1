@@ -75,7 +75,7 @@ function DBLab() {
               download={`DbLab${task}.pdf`}
               className="w-full sm:w-auto px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-primaryDark text-white font-semibold text-lg text-center shadow-md hover:bg-primaryDark hover:scale-105 transform transition-transform duration-300"
             >
-              Download PDF
+              Download PDFF
             </a>
           </div>
         ))}
