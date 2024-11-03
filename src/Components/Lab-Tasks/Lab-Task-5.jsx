@@ -3,11 +3,14 @@ import React from "react";
 const LabTask5 = () => {
   return (
     <div className="p-6 mt-6 bg-white shadow-md rounded-lg max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold text-[#0284C7] mb-4">
+      <h1 className="text-2xl font-bold text-primary mb-4">
         Lab Task 5 - Made by Badar
       </h1>
+      <p className="text-md text-gray-600 mb-4">
+        This task involves creating several database tables and inserting sample data into them.
+      </p>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         1. Employee Table
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -22,7 +25,7 @@ const LabTask5 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         2. Departments Table
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -34,7 +37,7 @@ const LabTask5 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         3. Products Table
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -48,7 +51,7 @@ const LabTask5 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         4. CourseEnrollments Table
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -62,7 +65,7 @@ const LabTask5 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         5. Customers Table
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -75,7 +78,7 @@ const LabTask5 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         6. Orders Table
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -89,7 +92,7 @@ const LabTask5 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         7. Client Master Table
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -108,7 +111,7 @@ const LabTask5 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         8. Insertions for Client Master
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -124,7 +127,7 @@ const LabTask5 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         9. Product Master Table
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -143,7 +146,7 @@ const LabTask5 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         10. Insertion for Product Master
       </h2>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>

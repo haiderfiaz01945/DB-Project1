@@ -3,15 +3,15 @@ import React from "react";
 const LabTask6 = () => {
   return (
     <div className="p-6 mt-6 bg-white shadow-md rounded-lg max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold text-[#0284C7] mb-4">
-        Lab Task 6 - Made by Badar
+      <h1 className="text-2xl font-bold text-primary mb-4">
+        Lab Task 6
       </h1>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         Question 1: Creating Tables
       </h2>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         1. Creating the Challan_Header table:
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -25,7 +25,7 @@ const LabTask6 = () => {
         </code>
       </pre>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         2. Creating the Challan_Details table:
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -38,11 +38,11 @@ const LabTask6 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         Question 2: Inserting Values
       </h2>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         1. Insert values into Challan_Header table:
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -55,7 +55,7 @@ const LabTask6 = () => {
         </code>
       </pre>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         2. Insert values into Challan_Details table:
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -67,7 +67,7 @@ const LabTask6 = () => {
         </code>
       </pre>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         Select from Challan_Header:
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -76,11 +76,11 @@ const LabTask6 = () => {
         </code>
       </pre>
 
-      <h2 className="text-xl font-semibold text-[#0284C7] mb-2">
+      <h2 className="text-xl font-semibold text-primary mb-2">
         Additional Questions
       </h2>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         1. Make the primary key to client_no in client_master:
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -90,7 +90,7 @@ const LabTask6 = () => {
         </code>
       </pre>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         2. Add a new column phone_no in the client_master table:
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -99,7 +99,7 @@ const LabTask6 = () => {
         </code>
       </pre>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         3. Add the NOT NULL constraint in the product_master table:
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -112,7 +112,7 @@ const LabTask6 = () => {
         </code>
       </pre>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         4. Change the size of client_no field in the client_master table:
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>
@@ -122,7 +122,7 @@ const LabTask6 = () => {
         </code>
       </pre>
 
-      <h3 className="text-lg font-semibold text-[#0284C7] mb-2">
+      <h3 className="text-lg font-semibold text-primary mb-2">
         5. Select product_no and description where profit_percent is between 20 and 30 (both inclusive):
       </h3>
       <pre className="bg-gray-100 p-4 rounded-lg text-sm overflow-auto" style={{ overflowWrap: 'break-word' }}>

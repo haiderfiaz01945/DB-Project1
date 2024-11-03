@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 const DashBoard = () => {
   return (
     <div className="p-6 mt-6 bg-white shadow-md rounded-lg max-w-4xl mx-auto">
-      <h1 className="text-2xl font-bold text-[#0284C7] mb-4">
+      <h1 className="text-2xl font-bold text-primary mb-4">
         Introduction to Databases
       </h1>
       <p className="text-lg mb-4">
@@ -21,7 +21,7 @@ const DashBoard = () => {
       </p>
       <Link
         to="/Db-Lab" // Change "/lab-tasks" to your actual Lab Tasks route
-        className="mt-4 inline-block bg-[#0284C7] text-white font-semibold py-2 px-4 rounded shadow hover:bg-[#0369a1]"
+        className="mt-4 inline-block bg-primary text-white font-semibold py-2 px-4 rounded shadow hover:bg-primaryDark transition-colors duration-300"
       >
         Go to Lab Tasks
       </Link>

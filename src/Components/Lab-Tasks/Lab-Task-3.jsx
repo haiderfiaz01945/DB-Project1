@@ -2,17 +2,21 @@ import React from 'react';
 
 function LabTask3() {
   return (
-    <div className="p-8 bg-gray-50 min-h-screen">
-      <h1 className="text-3xl font-bold text-[#0284C7] mb-6 text-center">
+    <div className="p-8 min-h-screen bg-white">
+      <h1 className="text-3xl font-bold mb-6 text-center text-primary">
         Lab Task 3 - Database Management
       </h1>
       
-      <div className="bg-white p-6 rounded-lg shadow-md mb-8 max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold text-[#0284C7] mb-4">Q1. Create Tables</h2>
+      <div className="p-6 rounded-lg shadow-md mb-8 max-w-4xl mx-auto bg-white">
+        <h2 className="text-2xl font-semibold mb-4 text-primary">
+          Q1. Create Tables
+        </h2>
         
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-700 mb-2">i) Client Master Table</h3>
-          <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-black">
+            i) Client Master Table
+          </h3>
+          <div className="overflow-x-auto p-4 rounded-lg bg-background">
             <pre className="text-sm">
               <code>
                 CREATE TABLE client_master (
@@ -32,8 +36,10 @@ function LabTask3() {
         </div>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-700 mb-2">Insert Data</h3>
-          <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-black">
+            Insert Data
+          </h3>
+          <div className="overflow-x-auto p-4 rounded-lg bg-background">
             <pre className="text-sm">
               <code>
                 INSERT INTO client_master (client_no, name, address1, address2, city, state, pincode, bal_due) VALUES
@@ -49,8 +55,10 @@ function LabTask3() {
         </div>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-700 mb-2">ii) Product Master Table</h3>
-          <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-black">
+            ii) Product Master Table
+          </h3>
+          <div className="overflow-x-auto p-4 rounded-lg bg-background">
             <pre className="text-sm">
               <code>
                 CREATE TABLE product_master (
@@ -70,8 +78,10 @@ function LabTask3() {
         </div>
 
         <div className="mb-6">
-          <h3 className="text-xl font-semibold text-gray-700 mb-2">Insert Data</h3>
-          <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-black">
+            Insert Data
+          </h3>
+          <div className="overflow-x-auto p-4 rounded-lg bg-background">
             <pre className="text-sm">
               <code>
                 INSERT INTO product_master (product_no, description, profit_percent, unit_measure,<br />
@@ -91,13 +101,15 @@ function LabTask3() {
         </div>
       </div>
 
-      <div className="bg-white p-6 rounded-lg shadow-md max-w-4xl mx-auto">
-        <h2 className="text-2xl font-semibold text-[#0284C7] mb-4">Q5. Query Exercises</h2>
+      <div className="p-6 rounded-lg shadow-md max-w-4xl mx-auto bg-white">
+        <h2 className="text-2xl font-semibold mb-4 text-primary">
+          Q5. Query Exercises
+        </h2>
 
         <div className="space-y-4">
           <div>
-            <p className="font-semibold">i) Find out the names of all clients:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+            <p className="font-semibold text-black">i) Find out the names of all clients:</p>
+            <div className="overflow-x-auto p-4 rounded-lg bg-background">
               <pre className="text-sm">
                 <code>SELECT name FROM client_master;</code>
               </pre>
@@ -105,8 +117,8 @@ function LabTask3() {
           </div>
 
           <div>
-            <p className="font-semibold">ii) Retrieve names and cities of all clients:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+            <p className="font-semibold text-black">ii) Retrieve names and cities of all clients:</p>
+            <div className="overflow-x-auto p-4 rounded-lg bg-background">
               <pre className="text-sm">
                 <code>SELECT name, city FROM client_master;</code>
               </pre>
@@ -114,8 +126,8 @@ function LabTask3() {
           </div>
 
           <div>
-            <p className="font-semibold">iii) List all products available:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+            <p className="font-semibold text-black">iii) List all products available:</p>
+            <div className="overflow-x-auto p-4 rounded-lg bg-background">
               <pre className="text-sm">
                 <code>SELECT * FROM product_master;</code>
               </pre>
@@ -123,8 +135,8 @@ function LabTask3() {
           </div>
 
           <div>
-            <p className="font-semibold">iv) List all clients in Bombay:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+            <p className="font-semibold text-black">iv) List all clients in Bombay:</p>
+            <div className="overflow-x-auto p-4 rounded-lg bg-background">
               <pre className="text-sm">
                 <code>SELECT * FROM client_master WHERE city = 'Bombay';</code>
               </pre>
@@ -132,8 +144,8 @@ function LabTask3() {
           </div>
 
           <div>
-            <p className="font-semibold">v) Display info for client no 0001 and 0002:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+            <p className="font-semibold text-black">v) Display info for client no 0001 and 0002:</p>
+            <div className="overflow-x-auto p-4 rounded-lg bg-background">
               <pre className="text-sm">
                 <code>SELECT * FROM client_master WHERE client_no IN ('0001', '0002');</code>
               </pre>
@@ -141,46 +153,28 @@ function LabTask3() {
           </div>
 
           <div>
-            <p className="font-semibold">vi) Find products with '1.44 drive' or '1.22 Drive' descriptions:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+            <p className="font-semibold text-black">vi) Find products with '1.44 drive' or '1.22 Drive' descriptions:</p>
+            <div className="overflow-x-auto p-4 rounded-lg bg-background">
               <pre className="text-sm">
-                <code>SELECT * FROM product_master WHERE description IN ('1.44 drive', '1.22 Drive');</code>
+                <code>SELECT * FROM product_master WHERE description IN ('1.44 Drive', '1.22 Drive');</code>
               </pre>
             </div>
           </div>
 
           <div>
-            <p className="font-semibold">vii) Products with sell price &gt; 5000:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+            <p className="font-semibold text-black">vii) Get clients with outstanding balances:</p>
+            <div className="overflow-x-auto p-4 rounded-lg bg-background">
               <pre className="text-sm">
-                <code>SELECT * FROM product_master WHERE sell_price &gt; 5000;</code>
+                <code>SELECT * FROM client_master WHERE bal_due > 0;</code>
               </pre>
             </div>
           </div>
 
           <div>
-            <p className="font-semibold">viii) Clients in Bombay, Delhi, or Madras:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
+            <p className="font-semibold text-black">viii) Count total products:</p>
+            <div className="overflow-x-auto p-4 rounded-lg bg-background">
               <pre className="text-sm">
-                <code>SELECT * FROM client_master WHERE city IN ('Bombay', 'Delhi', 'Madras');</code>
-              </pre>
-            </div>
-          </div>
-
-          <div>
-            <p className="font-semibold">ix) Products with sell price &gt; 2000 and &lt;= 5000:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
-              <pre className="text-sm">
-                <code>SELECT * FROM product_master WHERE sell_price &gt; 2000 AND sell_price &lt;= 5000;</code>
-              </pre>
-            </div>
-          </div>
-
-          <div>
-            <p className="font-semibold">x) Clients not in Maharashtra:</p>
-            <div className="overflow-x-auto bg-gray-100 p-4 rounded-lg">
-              <pre className="text-sm">
-                <code>SELECT name, city, state FROM client_master WHERE state &lt;&gt; 'Maharashtra';</code>
+                <code>SELECT COUNT(*) FROM product_master;</code>
               </pre>
             </div>
           </div>
