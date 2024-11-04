@@ -40,45 +40,41 @@ const SqlKeys = () => {
   ];
 
   return (
-    <div className="overflow-x-auto p-6 bg-background">
-       <div className="flex justify-center items-center mb-10">
-       <h1 className="text-4xl font-extrabold tracking-wide shadow-2xl p-2 rounded-lg text-primary">
-    SQL Query's
-</h1>
+    <div className="flex flex-col items-center p-6 bg-background">
+    <h1 className="text-4xl font-extrabold tracking-wide shadow-2xl p-4 rounded-lg text-primary mb-6">
+      SQL Queries
+    </h1>
 
-
-</div>
-
-          <motion.table
-            className="min-w-full bg-white border border-secondary"
-            initial={{ opacity: 0, y: 20 }}
+    <motion.table
+      className="min-w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden border border-secondary"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+    >
+      <thead className="bg-primary text-white">
+        <tr>
+          <th className="p-3 text-left border-b">SQL Query</th>
+          <th className="p-3 text-left border-b">Query Description</th>
+          <th className="p-3 text-left border-b">Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        {sqlData.map((item, index) => (
+          <motion.tr
+            key={index}
+            initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ delay: index * 0.1, duration: 0.5 }}
+            className="hover:bg-blue-100 text-primary transition duration-200"
           >
-        <thead className="bg-primary text-white">
-          <tr>
-            <th className="text-left p-3 border-b">SQL Query</th>
-            <th className="text-left p-3 border-b">Query Description</th>
-            <th className="text-left p-3 border-b">Example</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sqlData.map((item, index) => (
-                <motion.tr
-                  key={index}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1, duration: 0.5 }}
-                  className="hover:bg-blue-100 text-primary"
-                >
-              <td className="p-3 border-b border-secondary">{item.query}</td>
-              <td className="p-3 border-b border-secondary">{item.description}</td>
-              <td className="p-3 border-b border-secondary">{item.example}</td>
-                </motion.tr>
-          ))}
-        </tbody>
-          </motion.table>
-    </div>
+            <td className="p-3 border-b border-secondary">{item.query}</td>
+            <td className="p-3 border-b border-secondary">{item.description}</td>
+            <td className="p-3 border-b border-secondary">{item.example}</td>
+          </motion.tr>
+        ))}
+      </tbody>
+    </motion.table>
+  </div>
 
   );
 };
