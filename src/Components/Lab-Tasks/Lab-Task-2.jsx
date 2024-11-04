@@ -2,11 +2,11 @@ import React from 'react';
 
 function LabTask2() {
   return (
-    <div className="p-6 bg-white shadow-md rounded-lg mt-6 max-w-2xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4 text-primary">
+    <div className="p-4 sm:p-6 bg-white shadow-md rounded-lg mt-6 max-w-2xl mx-auto">
+      <h1 className="text-3xl sm:text-2xl font-bold mb-4 text-primary">
         Lab Task 2 Question
       </h1>
-      <p className="mb-6 text-black">
+      <p className="mb-6 text-black text-base sm:text-sm">
         → Create a table named as <strong>testtable</strong> having columns 
         <strong>test_id</strong> (int type) and <strong>name</strong> (varchar(225)).
         After creating the table, rename it to <strong>testtable2</strong> and add a column 
@@ -15,14 +15,14 @@ function LabTask2() {
         its datatype.
       </p>
       
-      <h2 className="text-xl font-semibold mb-2 text-primary">
+      <h2 className="text-2xl sm:text-xl font-semibold mb-2 text-primary">
         Solution
       </h2>
 
       <div className="space-y-4">
         <div>
           <p className="font-semibold text-black">1) Create the table:</p>
-          <pre className="p-4 rounded text-sm bg-background">
+          <pre className="p-3 rounded text-sm bg-background overflow-auto">
             <code>
               CREATE TABLE testtable (
               <br /> &nbsp;&nbsp;test_id INT,
@@ -34,7 +34,7 @@ function LabTask2() {
 
         <div>
           <p className="font-semibold text-black">2) Rename the table:</p>
-          <pre className="p-4 rounded text-sm bg-background">
+          <pre className="p-3 rounded text-sm bg-background overflow-auto">
             <code>
               ALTER TABLE testtable RENAME TO testtable2;
             </code>
@@ -43,16 +43,16 @@ function LabTask2() {
 
         <div>
           <p className="font-semibold text-black">3) Add a column:</p>
-          <pre className="p-4 rounded text-sm bg-background">
+          <pre className="p-3 rounded text-sm bg-background overflow-auto">
             <code>
-              ALTER TABLE testtable2 ADD COLUMN dob DATE;
+              ALTER TABLE testtable2 ADD COLUMN dob YEAR;
             </code>
           </pre>
         </div>
 
         <div>
           <p className="font-semibold text-black">4) Drop the column:</p>
-          <pre className="p-4 rounded text-sm bg-background">
+          <pre className="p-3 rounded text-sm bg-background overflow-auto">
             <code>
               ALTER TABLE testtable2 DROP COLUMN dob;
             </code>
@@ -61,7 +61,7 @@ function LabTask2() {
 
         <div>
           <p className="font-semibold text-black">5) Rename and change column type:</p>
-          <pre className="p-4 rounded text-sm bg-background">
+          <pre className="p-3 rounded text-sm bg-background overflow-auto">
             <code>
               ALTER TABLE testtable2 RENAME COLUMN name TO fname;
             </code>

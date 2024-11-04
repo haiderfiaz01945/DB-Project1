@@ -1,4 +1,3 @@
-// Footer.js
 import React from 'react';
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from 'react-icons/fa'; // Importing social media icons
 
@@ -21,9 +20,9 @@ const Footer = () => {
 
         {/* Footer Navigation */}
         <div className="footerNav mb-6">
-          <ul className="flex justify-center list-none">
-            {['Lab Tasks Overview', 'Lab Task 1', 'Lab Task 2', 'Lab Task 3', 'Lab Task 4', 'Lab Task 5', 'Lab Task 6'].map((link, index) => (
-              <li key={index} className="mx-4">
+          <ul className="flex flex-wrap justify-center list-none">
+            {['Lab Tasks Overview', 'Lab-1', 'Lab-2', 'Lab-3', 'Lab-4', 'Lab-5', 'Lab-6'].map((link, index) => (
+              <li key={index} className="mx-2 sm:mx-4 whitespace-nowrap">
                 <a
                   href={`/${link.replace(/\s+/g, '-').toLowerCase()}`}
                   className="text-white opacity-70 text-lg transition duration-300 hover:opacity-100"
@@ -39,7 +38,7 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <div className="footerBottom bg-primary py-4">
         <p className="text-white text-center designer">
-          &copy; {new Date().getFullYear()} Your Company Name. All Rights Reserved.
+          &copy; {new Date().getFullYear()} Badar Fiaz. All Rights Reserved.
         </p>
       </div>
     </footer>

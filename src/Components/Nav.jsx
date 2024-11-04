@@ -56,9 +56,8 @@ const Nav = () => {
           <Link onClick={() => setIsSidebarOpen(false)} to={"/Db-Lab"} className="text-white hover:text-[#38BDF8] font-medium transition-colors duration-300">
             DB-Lab
           </Link>
-          <Link onClick={() => setIsSidebarOpen(false)} to={"/order"} className="text-white hover:text-[#38BDF8] font-medium transition-colors duration-300">
-            ---
-          </Link>
+          <Link onClick={() => setIsSidebarOpen(false)} to={"/Sql-Keys"} className="text-white hover:text-[#38BDF8] font-medium transition-colors duration-300">
+          Sql-Querys          </Link>
         </div>
       </div>
 
@@ -97,8 +96,8 @@ const Nav = () => {
             </Link>
           </motion.div>
           <motion.div variants={itemVariants}>
-            <Link onClick={() => setIsSidebarOpen(false)} to={"/order"} className="text-primary hover:text-[#38BDF8] font-medium transition-colors duration-300">
-              ----
+            <Link onClick={() => setIsSidebarOpen(false)} to={"/Sql-Keys"} className="text-primary hover:text-[#38BDF8] font-medium transition-colors duration-300">
+              Sql-Querys
             </Link>
           </motion.div>
           <motion.div variants={itemVariants}>
