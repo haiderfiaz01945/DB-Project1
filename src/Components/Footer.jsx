@@ -10,7 +10,7 @@ const Footer = () => {
           <a href="#" className="flex justify-center items-center bg-white rounded-full p-2 mx-2 transition duration-500 hover:bg-primaryDark">
             <FaFacebookF className="text-primary opacity-90 text-2xl" />
           </a>
-          <a href="#" className="flex justify-center items-center bg-white rounded-full p-2 mx-2 transition duration-500 hover:bg-primaryDark">
+          <a href="https://www.instagram.com/badrfiaz_/" className="flex justify-center items-center bg-white rounded-full p-2 mx-2 transition duration-500 hover:bg-primaryDark">
             <FaInstagram className="text-primary opacity-90 text-2xl" />
           </a>
           <a href="https://www.linkedin.com/in/badar-fiaz-689a31312" className="flex justify-center items-center bg-white rounded-full p-2 mx-2 transition duration-500 hover:bg-primaryDark">
@@ -19,20 +19,28 @@ const Footer = () => {
         </div>
 
         {/* Footer Navigation */}
-        <div className="footerNav mb-6">
-          <ul className="flex flex-wrap justify-center list-none">
-            {['Lab Tasks Overview', 'Lab-1', 'Lab-2', 'Lab-3', 'Lab-4', 'Lab-5', 'Lab-6'].map((link, index) => (
-              <li key={index} className="mx-2 sm:mx-4 whitespace-nowrap">
-                <a
-                  href={`/${link.replace(/\s+/g, '-').toLowerCase()}`}
-                  className="text-white opacity-70 text-lg transition duration-300 hover:opacity-100"
-                >
-                  {link}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div className="footerNav mb-6">
+        <ul className="flex flex-wrap justify-center list-none">
+          {[
+            { name: 'Lab Tasks', path: '/Db-Lab' },
+            { name: 'Lab-1', path: '/lab-task-1' },
+            { name: 'Lab-2', path: '/lab-task-2' },
+            { name: 'Lab-3', path: '/lab-task-3' },
+            { name: 'Lab-4', path: '/lab-task-4' },
+            { name: 'Lab-5', path: '/lab-task-5' },
+            { name: 'Lab-6', path: '/lab-task-6' },
+          ].map((link, index) => (
+            <li key={index} className="mx-2 sm:mx-4 whitespace-nowrap">
+              <a
+                href={link.path}
+                className="text-white opacity-70 text-lg transition duration-300 hover:opacity-100"
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
       </div>
 
       {/* Footer Bottom Section */}

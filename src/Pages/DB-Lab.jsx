@@ -56,12 +56,12 @@ function DBLab() {
     >
       {/* Header Container for View Solution and Questions */}
       <div className="hidden md:flex justify-between items-center mb-4 bg-white shadow-lg rounded-lg p-4">
-        <h2 className="text-2xl font-semibold text-primary">View Solution</h2>
+        <h2 className="text-2xl font-semibold text-primary">View Solutions</h2>
         <h2 className="text-2xl font-semibold text-primary">Questions</h2>
       </div>
 
       {/* Combined View Solution and Download PDF Section */}
-      {[1, 2, 3, 4, 5, 6].map((task) => (
+      {[1, 2, 3, 4, 5, 6,7].map((task) => (
         <motion.div
           key={task}
           className="flex flex-col sm:flex-row items-center justify-between bg-white p-4 rounded-lg shadow-lg space-y-4 sm:space-y-0 sm:space-x-6"

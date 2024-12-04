@@ -12,21 +12,32 @@ import LabTask1 from './Components/Lab-Tasks/Lab-Task-1';
 import Footer from './Components/Footer';
 import SqlKeys from './Pages/Sql-Keys';
 import ScrollToTop from './Components/Scrool-To-Top';
+import Insert from './Pages/Insert';
 const App = () => {
     return (
         <Router>
             <Nav/>
             <ScrollToTop/>
              <Routes>
+
              <Route path="/Db-Lab" element={<DBLab />} />
+
              <Route path="/" element={<DashBoard/>} />
+
              <Route path="/Sql-Keys" element={<SqlKeys/>} />
+
+
              <Route path="/Lab-Task-1" element={<LabTask1/>} />
              <Route path="/Lab-Task-2" element={<LabTask2/>} />
              <Route path="/Lab-Task-3" element={<LabTask3/>} />
              <Route path="/Lab-Task-4" element={<LabTask4/>} />
              <Route path="/Lab-Task-5" element={<LabTask5/>} />
              <Route path="/Lab-Task-6" element={<LabTask6/>} />
+
+             <Route path="/Learn" element={<Insert/>} />
+
+
+
              </Routes>
              <Footer/>
         </Router>
