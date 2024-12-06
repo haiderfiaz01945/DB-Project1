@@ -21,6 +21,7 @@ const SqlKeys = () => {
     { query: "LEFT JOIN", description: "Retrieves all records from the left table and matched records from the right table.", example: "SELECT users.name, orders.amount FROM users LEFT JOIN orders ON users.id = orders.user_id;" },
     { query: "RIGHT JOIN", description: "Retrieves all records from the right table and matched records from the left table.", example: "SELECT users.name, orders.amount FROM users RIGHT JOIN orders ON users.id = orders.user_id;" },
     { query: "FULL OUTER JOIN", description: "Retrieves records when there is a match in one of the tables.", example: "SELECT users.name, orders.amount FROM users FULL OUTER JOIN orders ON users.id = orders.user_id;" },
+    
     { query: "UNION", description: "Combines the result sets of two or more SELECT queries.", example: "SELECT name FROM users UNION SELECT name FROM employees;" },
     { query: "UNION ALL", description: "Combines the result sets of two or more SELECT queries, including duplicates.", example: "SELECT name FROM users UNION ALL SELECT name FROM employees;" },
     { query: "SUBQUERY", description: "A query nested inside another query.", example: "SELECT name FROM users WHERE age = (SELECT MAX(age) FROM users);" },

@@ -61,7 +61,7 @@ function DBLab() {
       </div>
 
       {/* Combined View Solution and Download PDF Section */}
-      {[1, 2, 3, 4, 5, 6,7].map((task) => (
+      {[1, 2, 3, 4, 5, 6, 7, 8].map((task) => (
         <motion.div
           key={task}
           className="flex flex-col sm:flex-row items-center justify-between bg-white p-4 rounded-lg shadow-lg space-y-4 sm:space-y-0 sm:space-x-6"
