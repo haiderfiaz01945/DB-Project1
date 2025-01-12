@@ -23,12 +23,15 @@ const Footer = () => {
         <ul className="flex flex-wrap justify-center list-none">
           {[
             { name: 'Lab Tasks', path: '/Db-Lab' },
-            { name: 'Lab-1', path: '/lab-task-1' },
             { name: 'Lab-2', path: '/lab-task-2' },
             { name: 'Lab-3', path: '/lab-task-3' },
             { name: 'Lab-4', path: '/lab-task-4' },
             { name: 'Lab-5', path: '/lab-task-5' },
             { name: 'Lab-6', path: '/lab-task-6' },
+            { name: 'Lab-8', path: '/lab-task-8' },
+            { name: 'Lab-9', path: '/lab-task-9' },
+            { name: 'Lab-10', path: '/lab-task-10' },
+            { name: 'Lab-12', path: '/lab-task-12' },
           ].map((link, index) => (
             <li key={index} className="mx-2 sm:mx-4 whitespace-nowrap">
               <a
