@@ -1,10 +1,22 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
- import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
+
 function DBLab() {
+  const handleDownloadPDF = (taskNumber) => {
+    const pdfUrl = `/assets/DbLab${taskNumber}.pdf`;
+    
+    // Creating a temporary anchor element
+    const link = document.createElement("a");
+    link.href = pdfUrl;
+    link.download = `DbLab${taskNumber}.pdf`;
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-6">
-       {/* Background shapes */}
       {/* Background shapes */}
       <div  
         aria-hidden="true"
@@ -49,46 +61,46 @@ function DBLab() {
       </h1>
 
       <motion.div
-      className="space-y-6 w-full max-w-2xl"
-      initial={{ opacity: 0, y: 20 }} // Initial state for animation
-      animate={{ opacity: 1, y: 0 }} // Final state for animation
-      transition={{ duration: 0.5 }} // Animation duration
-    >
-      {/* Header Container for View Solution and Questions */}
-      <div className="hidden md:flex justify-between items-center mb-4 bg-white shadow-lg rounded-lg p-4">
-        <h2 className="text-2xl font-semibold text-primary">View Solutions</h2>
-        <h2 className="text-2xl font-semibold text-primary">Questions</h2>
-      </div>
+        className="space-y-6 w-full max-w-2xl"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        {/* Header Container for View Solution and Questions */}
+        <div className="hidden md:flex justify-between items-center mb-4 bg-white shadow-lg rounded-lg p-4">
+          <h2 className="text-2xl font-semibold text-primary">View Solutions</h2>
+          <h2 className="text-2xl font-semibold text-primary">Questions</h2>
+        </div>
 
-      {/* Combined View Solution and Download PDF Section */}
-      {[1, 2, 3, 4, 5, 6, 7, 8].map((task) => (
-        <motion.div
-          key={task}
-          className="flex flex-col sm:flex-row items-center justify-between bg-white p-4 rounded-lg shadow-lg space-y-4 sm:space-y-0 sm:space-x-6"
-          whileHover={{ scale: 1.02 }} // Scale effect on hover
-          transition={{ duration: 0.2 }} // Transition duration for hover effect
-        >
-          {/* View Solution Button */}
-          <Link
-            to={`/Lab-Task-${task}`}
-            className="w-full sm:w-auto px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-primaryDark text-white font-semibold text-lg text-center shadow-md transform transition-transform duration-300 hover:bg-primaryDark hover:scale-105"
+        {/* Combined View Solution and Download PDF Section */}
+        {[ 2, 3, 4, 5, 6, 8, 9, 10, 12].map((task) => (
+          <motion.div
+            key={task}
+            className="flex flex-col sm:flex-row items-center justify-between bg-white p-4 rounded-lg shadow-lg space-y-4 sm:space-y-0 sm:space-x-6"
+            whileHover={{ scale: 1.02 }}
+            transition={{ duration: 0.2 }}
           >
-            Lab Task {task}
-          </Link>
+            {/* View Solution Button */}
+            <Link
+              to={`/Lab-Task-${task}`}
+              className="w-full sm:w-auto px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-primaryDark text-white font-semibold text-lg text-center shadow-md transform transition-transform duration-300 hover:bg-primaryDark hover:scale-105"
+            >
+              Lab Task {task}
+            </Link>
 
-          {/* Download PDF Button */}
-          <a
-            href={`/assets/DbLab${task}.pdf`}
-            download={`DbLab${task}.pdf`}
-            className="w-full sm:w-auto px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-primaryDark text-white font-semibold text-lg text-center shadow-md transform transition-transform duration-300 hover:bg-primaryDark hover:scale-105"
-          >
-            Download PDF
-          </a>
-        </motion.div>
-      ))}
-    </motion.div>
-     </div>
+            {/* Download PDF Button */}
+            <button
+              onClick={() => handleDownloadPDF(task)}
+              className="w-full sm:w-auto px-6 py-3 rounded-lg bg-gradient-to-r from-primary to-primaryDark text-white font-semibold text-lg text-center shadow-md transform transition-transform duration-300 hover:bg-primaryDark hover:scale-105"
+            >
+              Download PDF
+            </button>
+          </motion.div>
+        ))}
+      </motion.div>
+    </div>
   );
 }
 
 export default DBLab;
+

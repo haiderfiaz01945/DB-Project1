@@ -10,10 +10,13 @@ import LabTask5 from './Components/Lab-Tasks/Lab-Task-5';
 import LabTask6 from './Components/Lab-Tasks/Lab-Task-6';
 import LabTask1 from './Components/Lab-Tasks/Lab-Task-1';
 import LabTask8 from './Components/Lab-Tasks/Lab-Task-8';
-import Footer from './Components/Footer';
+import LabTask9 from './Components/Lab-Tasks/Lab-Task-9';
+import LabTask10 from './Components/Lab-Tasks/Lab-Task-10';
+ import Footer from './Components/Footer';
 import SqlKeys from './Pages/Sql-Keys';
 import ScrollToTop from './Components/Scrool-To-Top';
 import Insert from './Pages/Insert';
+import LabTask12 from './Components/Lab-Tasks/Lab-Task-12';
 const App = () => {
     return (
         <Router>
@@ -35,6 +38,9 @@ const App = () => {
              <Route path="/Lab-Task-5" element={<LabTask5/>} />
              <Route path="/Lab-Task-6" element={<LabTask6/>} />
              <Route path="/Lab-Task-8" element={<LabTask8/>} />
+             <Route path="/Lab-Task-9" element={<LabTask9/>} />
+             <Route path="/Lab-Task-10" element={<LabTask10/>} />
+             <Route path="/Lab-Task-12" element={<LabTask12/>} />
 
              <Route path="/Learn" element={<Insert/>} />
 
